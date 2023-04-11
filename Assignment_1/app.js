@@ -118,17 +118,15 @@
 // }
 
 
-// 7. Write a JavaScript program to construct the following pattern, using a nested
-// for loop.
+//7. Write a JavaScript program to construct the following pattern, using a nested
+//for loop.
 
-// for (let i = 0; i < 15; i++) {
-//     // console.log("*")
-//     let symbol = "*"
-//     console.log(symbol)
-//     for(var j = 1; j <= 4; j++)
-//     {
-//         let newSymbol = "*"
-//     console.log(newSymbol)
-
-//     }
-// }
+let n = 5;
+let string = "";
+for (let i=0; i<=n ;i++){
+    for(let j=0; j<=i;j++){
+        string += "*";
+    }
+    string += "\n";
+}
+console.log(string);
